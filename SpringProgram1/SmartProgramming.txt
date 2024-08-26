@@ -1,0 +1,1 @@
+spring configuration file xml schema
