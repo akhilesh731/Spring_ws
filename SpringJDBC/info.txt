@@ -1,0 +1,9 @@
+CREATE TABLE student(
+	id INT PRIMARY KEY,
+	name VARCHAR(100),
+	city VARCHAR(100)
+);
+
+insert into STUDENT values(?,?,?)
+
+DB: spring_jdbc
