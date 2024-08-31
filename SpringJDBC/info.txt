@@ -7,3 +7,14 @@ CREATE TABLE student(
 insert into STUDENT values(?,?,?)
 
 DB: spring_jdbc
+
+* public interface DataSource
+
+* public class DriverManagerDataSource
+  Simple implementation of the standard JDBC DataSource interface,
+  configuring the plain old JDBC DriverManager via bean properties, and
+  returning a new java.sql.Connection from every getConnection call.
+
+* public class JdbcTemplate implements JdbcOperations
+  A utility class in the JDBC core package
+  It simplifies the use of JDBC 
