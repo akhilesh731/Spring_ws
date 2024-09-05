@@ -1,19 +1,14 @@
 package com.spring.orm.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
-@Entity
-@Table(name = "student_details")
+@javax.persistence.Entity
+@javax.persistence.Table(name = "student_details")
 public class Student {
-	@Id
-	@Column(name = "s_id")
+	@javax.persistence.Id
+	@javax.persistence.Column(name = "s_id")
 	private int id;
-	@Column(name = "s_name")
+	@javax.persistence.Column(name = "s_name")
 	private String name;
-	@Column(name = "s_city")
+	@javax.persistence.Column(name = "s_city")
 	private String city;
 	
 	public Student() {}
@@ -40,6 +35,11 @@ public class Student {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + "]";
 	}
 	
 }
